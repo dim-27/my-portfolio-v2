@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/ui/navbar/navbar";
+import { headingFontItalic, headingFontRegular, primaryFont } from "@/lib/font";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,10 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${primaryFont.variable}${headingFontItalic.variable}${headingFontRegular.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${primaryFont.className} mx-6 md:mx-24`}
+        >
+        <Navbar/>
         {children}
       </body>
     </html>
