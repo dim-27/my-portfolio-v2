@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar/navbar";
 import { headingFontItalic, headingFontRegular, primaryFont } from "@/lib/font";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,10 +17,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${primaryFont.variable}${headingFontItalic.variable}${headingFontRegular.variable}`}>
       <body
-        className={`${primaryFont.className} mx-6 md:mx-24`}
-        >
-        <Navbar/>
-        {children}
+        className={`${primaryFont.className} relative`}
+        > 
+             <Image
+              src="/images/elipse.png"
+              alt="Profile 1"
+              fill
+              className="object-cover opacity-50 inset-0 -z-10"
+            />
+          <div className="mx-6 md:mx-16">
+            <Navbar/>
+            {children}
+          </div>
       </body>
     </html>
   );
