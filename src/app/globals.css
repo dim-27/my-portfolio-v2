@@ -3,7 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme inline {
   --text-fluid-xs: clamp(1.0417rem, 0.9279rem + 0.569vw, 1.44rem);
   --text-fluid-sm: clamp(1.25rem, 1.0929rem + 0.7857vw, 1.8rem);
@@ -14,11 +13,13 @@
   --text-fluid-2xl: clamp(2.592rem, 2.077rem + 2.575vw, 4.3945rem);
   --text-fluid-3xl: clamp(3.1104rem, 2.4296rem + 3.4039vw, 5.4932rem);
   --text-fluid-4xl: clamp(3.7325rem, 2.8371rem + 4.4771vw, 12.8665rem);
+  --text-fluid-5xl: clamp(7.275rem, 4.225rem + 4.875vw, 15.475rem);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
+  --color-primary-background: var(--background-primary);
+  --color-secondary-background: var(--background-secondary);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -53,7 +54,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.9932 0.0262 111.51);
+  --background-primary: oklch(0.9932 0.0262 111.51);
+  --background-secondary: oklch(0.4794 0.1578 268.92);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -120,11 +122,3 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
