@@ -1,20 +1,22 @@
 "use client";
-import { Button } from "@/components/ui/button/button";
-import { headingFontItalic, headingFontRegular, primaryFont } from "@/lib/font";
+import { primaryFont } from "@/lib/font";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 
 export default function Hero() {
-  const text = "Hey I'm Dimas"
+  const text = "Hey I'm ";
+  const name = "Dimas";
+  
   return (
-    <div className="bg-primary-background w-full p-8 min-h-screen">
-      <section className="max-w-6xl mx-auto my-24">
-        <span className={`${headingFontItalic.className} font-extrabold text-fluid-3xl sm:text-fluid-5xl inline-block overflow-hidden`}
-          >
+    <section className="bg-primary-background w-full py-8 smd:py-16">
+      <div className="flex flex-col">
+        <div className="flex min-[256px]:flex-col min-[480px]:flex-row min-[768px]:flex-row min-[1681px]:flex-col">
+          <div className={`${primaryFont.className} font-extrabold text-fluid-heading1 leading-40 relative overflow-hidden inline-block -mb-24 md:mb-2`}
+            >
             {text.split("").map((word, index) => (
               <motion.span
                 key={index}
-                initial={{y: '100%'}}
+                initial={{y: '300%'}}
                 animate={{y: '0%'}}
                 viewport={{once: true}}
                 className="inline-block"
@@ -23,54 +25,108 @@ export default function Hero() {
               >
                 {word}    
               </motion.span>
-            ))}                
-        </span>
-        <div className="relative overflow-hidden">
-          <motion.h3 className={`${headingFontRegular.className} font-black text-fluid-base leading-normal flex justify-end my-4`}
-            initial={{y: '100%', opacity: 0}}
-            animate={{y: '0%', opacity: 1}}
-            viewport={{once: true}}
-            transition={{duration:0.9, delay: 1, ease: [0.2, 0.65, 0.3, 0.9]}}
-          >
-            Software Developer and Designer
-          </motion.h3>
+            ))}
+          </div>
+          <div className={`${primaryFont.className} font-extrabold text-fluid-heading1 leading-40 relative overflow-hidden inline-block -mb-2`}>
+            {name.split("").map((char, index) => (
+              <motion.span
+                key={index}
+                initial={{y: '300%'}}
+                animate={{y: '0%'}}
+                viewport={{once: true}}
+                className="inline-block"
+                transition={{duration: 1, delay: 0.08 * index, ease: [0.2, 0.65, 0.3, 0.9]}}
+                style={{marginRight: char === " " ? "0.2em" : "-0.02em"}}
+              >
+                {char}
+              </motion.span>                
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col justify-around md:flex-row gap-16 md:gap-4">
-          <motion.div className={`${primaryFont.className} flex flex-row md:flex-col gap-4 order-2 md:order-1`}
-            initial={{opacity: 0, y: 20}}
-            animate={{opacity: 1, y: 0}}
-            viewport={{once: true}}
-            transition={{duration:1, delay: 1, ease: [0.4, 0, 0.2, 1]}}
-          >
-            <div className="flex flex-col gap-1">
-              <p className={`font-regular text-fluid-xs tracking-wide`}>Based in Jakarta</p>
-              <p className={`font-regular text-fluid-xs tracking-wide`}>Currently Available</p>
-            </div>
-            <div className="w-40 md:w-full max-w-6xl">
-              <Image
-                src="/images/profile2.png"
-                alt="Profile 1"
-                priority
-                width={1200}
-                height={800}
-                className=" object-cover rounded-md w-full h-full"
-              />
-            </div>
-          </motion.div>
-          <div className="flex flex-col md:text-right gap-4 order-1 md:order-2 justify-end">
-            <motion.div
-              className="space-y-4"
+        <motion.h3 className={`${primaryFont.className} font-normal italic text-fluid-base leading-normal mb-6`}
+          initial={{y: '100%', opacity: 0}}
+          animate={{y: '0%', opacity: 1}}
+          viewport={{once: true}}
+          transition={{duration:0.9, delay: 1, ease: [0.2, 0.65, 0.3, 0.9]}}
+        >
+          Software Developer and Designer
+        </motion.h3>
+        <div className="flex flex-col min-[425px]:flex-row">
+          <div className="flex flex-col justify-between gap-6">
+            <div className="flex flex-col gap-6">
+              <motion.div
+                className="space-y-8"
+                initial={{opacity: 0, x: 20}}
+                animate={{opacity: 1, x: 0}}
+                viewport={{once: true}}
+                transition={{duration:1, delay: 1}}
+              >
+                <h1 className="max-w-xl font-normal text-fluid-base sm:text-fluid-xs leading-relaxed">I believe in crafting a seamless digital experiences that blends creativity and interactive storytelling.</h1>
+              </motion.div>
+              <motion.a 
               initial={{opacity: 0, x: 20}}
               animate={{opacity: 1, x: 0}}
               viewport={{once: true}}
-              transition={{duration:1, delay: 1}}
+              transition={{duration:1, delay: 1.5}} 
+              className="flex flex-row gap-4 w-12 cursor-pointer">
+                <Image
+                  src="/images/linkedin6.png"
+                  alt="logo-linkedin"
+                  priority
+                  width={2400}
+                  height={800}
+                  className="object-fit w-full h-auto hover:opacity-75"
+                />
+                <Image
+                  src="/images/github.png"
+                  alt="logo-github"
+                  priority
+                  width={2400}
+                  height={800}
+                  className="object-fit w-full h-auto hover:opacity-75"
+                />
+                <Image
+                  src="/images/mail1.png"
+                  alt="logo-github"
+                  priority
+                  width={2400}
+                  height={800}
+                  className="object-fit w-full h-auto hover:opacity-75"
+                />
+              </motion.a>
+            </div>
+            <motion.div 
+              className="flex flex-col text-fluid-base gap-2 tracking-wide"
+              initial={{opacity: 0, x: 20}}
+              animate={{opacity: 1, x: 0}}
+              viewport={{once: true}}
+              transition={{duration:1, delay: 1.5}}
             >
-              <h1 className={`${primaryFont.className} max-w-md font-regular text-xl lg:text-2xl`}>I believe in crafting a seamless digital experiences that blends creativity and interactive storytelling.</h1>
-              <Button size="lg" className="rounded-full p-6" variant="default">LET'S COLLAB</Button>
+              <p className={`font-regular`}>Based in Jakarta</p>
+              <p className={`font-medium`}>Working Worldwide</p>
+            </motion.div>
+          </div>
+          <div className="flex items-end my-2">
+            <motion.div 
+              initial={{opacity: 0, y:100}}
+              animate={{opacity: 1, y: 0}}
+              exit={{opacity: 0, y: -100}}
+              viewport={{once: true}}
+              transition={{duration:0.9, delay: 1, ease: [0.2, 0.65, 0.3, 0.9]}}   
+              className="w-full min-[256px]:max-w-24 min-[425px]:max-w-64 sm:max-w-sm"
+            >
+              <Image
+                src="/images/foto_dimas.jpg"
+                alt="Profile 1"
+                priority
+                width={2400}
+                height={800}
+                className=" object-cover rounded-full w-full h-auto"
+              />
             </motion.div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
