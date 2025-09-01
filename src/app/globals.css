@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --text-fluid-xs: clamp(0.5rem, 1vw + 1rem, 1rem);
   --text-fluid-sm: clamp(1rem, 0.25vw + 1rem, 1.333rem);
   --text-fluid-base: clamp(1.333rem, 1vw + 1rem, 2rem);
   --text-fluid-md: clamp(2rem, 1vw + 1rem, 2.667rem);
@@ -56,7 +57,7 @@
 :root {
   --radius: 0.625rem;
   --background-primary: oklch(0.9932 0.0262 111.51);
-  --background-secondary: oklch(0.4794 0.1578 268.92);
+  --background-secondary: oklch(0.9945 0.0017 67.8);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);

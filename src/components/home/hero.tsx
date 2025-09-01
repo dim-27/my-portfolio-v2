@@ -1,6 +1,7 @@
 "use client";
 import { primaryFont } from "@/lib/font";
 import Image from "next/image";
+import Link from "next/link";
 import * as motion from "motion/react-client";
 
 export default function Hero() {
@@ -8,9 +9,9 @@ export default function Hero() {
   const name = "Dimas";
   
   return (
-    <section className="bg-primary-background w-full py-8 smd:py-16">
+    <section className="bg-primary-background w-full py-8 md:py-16">
       <div className="flex flex-col">
-        <div className="flex min-[256px]:flex-col min-[480px]:flex-row min-[768px]:flex-row min-[1681px]:flex-col">
+        <div className="flex min-[256px]:flex-col min-[480px]:flex-row">
           <div className={`${primaryFont.className} font-extrabold text-fluid-heading1 leading-40 relative overflow-hidden inline-block -mb-24 md:mb-2`}
             >
             {text.split("").map((word, index) => (
@@ -61,42 +62,61 @@ export default function Hero() {
                 viewport={{once: true}}
                 transition={{duration:1, delay: 1}}
               >
-                <h1 className="max-w-xl font-normal text-fluid-base sm:text-fluid-xs leading-relaxed">I believe in crafting a seamless digital experiences that blends creativity and interactive storytelling.</h1>
+                <h1 className="max-w-xl font-normal text-fluid-base leading-relaxed">I believe in crafting a seamless digital experiences that blends creativity and interactive storytelling.</h1>
               </motion.div>
-              <motion.a 
-              initial={{opacity: 0, x: 20}}
-              animate={{opacity: 1, x: 0}}
-              viewport={{once: true}}
-              transition={{duration:1, delay: 1.5}} 
-              className="flex flex-row gap-4 w-12 cursor-pointer">
-                <Image
-                  src="/images/linkedin6.png"
-                  alt="logo-linkedin"
-                  priority
-                  width={2400}
-                  height={800}
-                  className="object-fit w-full h-auto hover:opacity-75"
-                />
-                <Image
-                  src="/images/github.png"
-                  alt="logo-github"
-                  priority
-                  width={2400}
-                  height={800}
-                  className="object-fit w-full h-auto hover:opacity-75"
-                />
-                <Image
-                  src="/images/mail1.png"
-                  alt="logo-github"
-                  priority
-                  width={2400}
-                  height={800}
-                  className="object-fit w-full h-auto hover:opacity-75"
-                />
-              </motion.a>
+                <motion.div
+                initial={{opacity: 0, x: 20}}
+                animate={{opacity: 1, x: 0}}
+                viewport={{once: true}}
+                transition={{duration:1, delay: 1.5}} 
+                className="max-w-48"
+                >
+                <div className="cursor-pointer flex flex-row gap-4">
+                  <Link
+                    href="https://www.linkedin.com/in/muhammad-dimas-firmanda/"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/images/linkedin6.png"
+                      alt="logo-linkedin"
+                      priority
+                      width={2400}
+                      height={800}
+                      className="object-fit w-full h-auto hover:opacity-75"
+                    />
+                  </Link>
+                  <Link
+                    href="https://github.com/dim-27"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/images/github.png"
+                      alt="logo-github"
+                      priority
+                      width={2400}
+                      height={800}
+                      className="object-fit w-full h-auto hover:opacity-75"
+                    />
+                    
+                  </Link>
+                  <Link
+                    href="mailto:dimasfirmanda27@gmail.com"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/images/mail1.png"
+                      alt="logo-github"
+                      priority
+                      width={2400}
+                      height={800}
+                      className="object-fit w-full h-auto hover:opacity-75"
+                    />
+                  </Link>
+                </div>
+              </motion.div>
             </div>
             <motion.div 
-              className="flex flex-col text-fluid-base gap-2 tracking-wide"
+              className="flex flex-col text-fluid-sm gap-2 tracking-wide"
               initial={{opacity: 0, x: 20}}
               animate={{opacity: 1, x: 0}}
               viewport={{once: true}}

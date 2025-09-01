@@ -1,5 +1,6 @@
-import { headingFontItalic, headingFontRegular, primaryFont } from "@/lib/font";
+import { primaryFont } from "@/lib/font";
 import { Button } from "../ui/button/button";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -16,35 +17,41 @@ export default function Services() {
               <p className="text-fluid-sm font-normal leading-relaxed">I am a software developer with over 3 years of experience who is specializing in building responsive, stable, and reliable app with seamless user experiences using my expertise and knowledges different tools and programming languages.</p>
               <p className="text-fluid-sm font-normal leading-relaxed">I am always willing to look for collaborations where I am able to learn, improve, and grow as a developer. if you believe with my skillset and experience, feel free to reach out and contact me</p>
             </div>
-            <a href="">
+            <Link href="#projects">
+              
               <Button size="default" variant="default">Projects</Button>
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col leading-relaxed">
             <h3 className="text-fluid-md font-semibold mb-2 tracking-widest">My tools</h3>
-            <ul className="flex flex-wrap gap-4 text-fluid-sm font-normal  max-w-xl">
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Javascript</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Typescript</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Python</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">C++</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">React</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Next</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Express</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Node</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Figma</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">SASS / SCSS</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Figma</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Linux</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Docker</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Nginx</li>
-              <li className="border p-2 border-gray-400 shadow-gray-400 shadow-md rounded-sm whitespace-nowrap">Caddy</li>
+            <ul className="flex flex-wrap gap-2 text-fluid-sm font-normal  max-w-xl">
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Javascript</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Typescript</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Python</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">C++</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">React</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Next</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Express</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Node</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Figma</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">SASS / SCSS</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">TailwindCSS</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Bootstrap</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Figma</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Linux</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Docker</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Nginx</li>
+              <li className="border p-2 shadow-black shadow-md rounded-sm whitespace-nowrap">Caddy</li>
             </ul>
           </div>
       </div>
       <div className="flex flex-col">
-        <h3 className="text-fluid-md font-semibold mb-2 tracking-widest">What I Offer</h3>
+        <h3 className="text-fluid-md font-semibold mb-2 tracking-widest">What i offer</h3>
         <div className="flex flex-wrap md:grid-cols-4 gap-6">
           <h3 className="text-fluid-sm font-normal tracking-widest  ">Customized Software Application</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest  ">Frontend Development</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest  ">Backend Development</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest  ">DevOps</h3>
           <h3 className="text-fluid-sm font-normal tracking-widest ">UI/UX Design</h3>
           <h3 className="text-fluid-sm font-normal tracking-widest ">CMS Integration</h3>
           <h3 className="text-fluid-sm font-normal tracking-widest ">Web API Development</h3>
