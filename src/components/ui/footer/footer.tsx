@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className='bg-primary-background w-full p-12'>
+    <section className='bg-primary-background w-full p-4'>
       <div className="container mx-auto flex flex-col lg:flex-row justify-between text-fluid-base max-w-7xl gap-4">
         <div className="font-bold">© {new Date().getFullYear()} Dimas Firmanda. All rights reserved
         </div>
