@@ -9,7 +9,7 @@ export default function Hero() {
   const name = "Dimas";
   
   return (
-    <section className="bg-primary-background w-full py-8 md:py-16">
+    <section className="bg-primary-background w-full py-8 md:py-16" id="hero">
       <div className="flex flex-col">
         <div className="flex min-[256px]:flex-col min-[480px]:flex-row">
           <div className={`${primaryFont.className} font-extrabold text-fluid-heading1 leading-40 relative overflow-hidden inline-block -mb-24 md:mb-2`}

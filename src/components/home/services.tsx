@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Services() {
   return (
     <section className="mx-auto container py-8 md:py-16">
-      <div className="flex flex-col items-start md:items-center">
-        <h2 className={`${primaryFont.className} font-semibold text-fluid-heading2 mb-3`}>About Me
+      <div className="flex flex-col items-start md:items-center" id="services">
+        <h2 className={`${primaryFont.className} font-semibold text-fluid-heading2 mb-3`}>My Services
         </h2>
         <div className="bg-black block h-2 w-10 -mt-5 mb-10"></div>
       </div>

@@ -3,9 +3,9 @@ import Image from "next/image";
 import { Button } from "../ui/button/button";
 import Link from "next/link";
 
-export default function Projects() {
+export default function Works() {
   return (
-    <section className="mx-auto container py-8 md:py-16" id="projects">
+    <section className="mx-auto container py-8 md:py-16" id="works">
       <div className="flex flex-col items-start md:items-center">
         <h2 className={`${primaryFont.className} font-semibold text-fluid-heading2 mb-3`}>Featured Works
         </h2>
