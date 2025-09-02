@@ -1,6 +1,4 @@
 import { primaryFont } from "@/lib/font";
-import { Button } from "../ui/button/button";
-import Link from "next/link";
 
 export default function Services() {
   return (
@@ -17,10 +15,6 @@ export default function Services() {
               <p className="text-fluid-sm font-normal leading-relaxed">I am a software developer with over 3 years of experience who is specializing in building responsive, stable, and reliable app with seamless user experiences using my expertise and knowledges different tools and programming languages.</p>
               <p className="text-fluid-sm font-normal leading-relaxed">I am always willing to look for collaborations where I am able to learn, improve, and grow as a developer. if you believe with my skillset and experience, feel free to reach out and contact me</p>
             </div>
-            <Link href="#projects">
-              
-              <Button size="default" variant="default">Projects</Button>
-            </Link>
           </div>
           <div className="flex flex-col leading-relaxed">
             <h3 className="text-fluid-md font-semibold mb-2 tracking-widest">My tools</h3>
@@ -48,17 +42,17 @@ export default function Services() {
       <div className="flex flex-col">
         <h3 className="text-fluid-md font-semibold mb-2 tracking-widest">What i offer</h3>
         <div className="flex flex-wrap md:grid-cols-4 gap-6">
-          <h3 className="text-fluid-sm font-normal tracking-widest  ">Customized Software Application</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest  ">Frontend Development</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest  ">Backend Development</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest  ">DevOps</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">UI/UX Design</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">CMS Integration</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">Web API Development</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">Responsive Web Design</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">On-Page Optimization</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">Enhanced Security</h3>
-          <h3 className="text-fluid-sm font-normal tracking-widest ">Web Hosting</h3>     
+          <h3 className="text-fluid-sm font-normal tracking-widest">Customized Software Application</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">Frontend Development</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">Backend Development</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">DevOps</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">UI/UX Design</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">CMS Integration</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">Web API Development</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">Responsive Web Design</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">On-Page Optimization</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">Enhanced Security</h3>
+          <h3 className="text-fluid-sm font-normal tracking-widest">Web Hosting</h3>     
         </div>
       </div>
     </section>

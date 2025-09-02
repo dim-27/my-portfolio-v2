@@ -13,7 +13,7 @@ export default function Footer() {
             target="_blank"
           >
             <Image
-              src="/images/linkedin6.png"
+              src="/images/linkedin.png"
               alt="logo-linkedin"
               priority
               width={2400}
@@ -39,7 +39,7 @@ export default function Footer() {
             target="_blank"
           >
             <Image
-              src="/images/mail1.png"
+              src="/images/mail.png"
               alt="logo-github"
               priority
               width={2400}

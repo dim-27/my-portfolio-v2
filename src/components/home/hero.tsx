@@ -77,7 +77,7 @@ export default function Hero() {
                     target="_blank"
                   >
                     <Image
-                      src="/images/linkedin6.png"
+                      src="/images/linkedin.png"
                       alt="logo-linkedin"
                       priority
                       width={2400}
@@ -100,11 +100,11 @@ export default function Hero() {
                     
                   </Link>
                   <Link
-                    href="mailto:dimasfirmanda27@gmail.com"
+                    href="mailto:dimasfirmanda.dev@gmail.com"
                     target="_blank"
                   >
                     <Image
-                      src="/images/mail1.png"
+                      src="/images/mail.png"
                       alt="logo-github"
                       priority
                       width={2400}
@@ -136,7 +136,7 @@ export default function Hero() {
               className="w-full min-[256px]:max-w-24 min-[425px]:max-w-64 sm:max-w-sm"
             >
               <Image
-                src="/images/foto_dimas.jpg"
+                src="/images/profile.jpg"
                 alt="Profile 1"
                 priority
                 width={2400}

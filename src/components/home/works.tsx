@@ -14,8 +14,8 @@ export default function Works() {
       <div className="flex flex-col md:flex-row border border-black justify-between rounded-2xl shadow-xl shadow-gray-400 overflow-hidden">
         <div className="max-w-2xl overflow-hidden max-h-[20em] md:max-h-[30em]">
           <Image
-            src="/images/image.png"
-            alt="logo-linkedin"
+            src="/images/project-1.png"
+            alt="project-1"
             priority
             width={2400}
             height={800}

@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/ui/navbar/navbar";
 import { headingFontItalic, headingFontRegular, primaryFont } from "@/lib/font";
 import Footer from "@/components/ui/footer/footer";
-import ReactLenis from "lenis/react";
 
 export const metadata: Metadata = {
   title: "Dimas Firmanda",
