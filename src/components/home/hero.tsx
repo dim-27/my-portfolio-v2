@@ -78,7 +78,7 @@ export default function Hero() {
                   >
                     <Image
                       src="/images/linkedin.png"
-                      alt="logo-linkedin"
+                      alt="icon-linkedin"
                       priority
                       width={2400}
                       height={800}
@@ -91,7 +91,7 @@ export default function Hero() {
                   >
                     <Image
                       src="/images/github.png"
-                      alt="logo-github"
+                      alt="icon-github"
                       priority
                       width={2400}
                       height={800}
@@ -105,7 +105,7 @@ export default function Hero() {
                   >
                     <Image
                       src="/images/mail.png"
-                      alt="logo-github"
+                      alt="icon-mail"
                       priority
                       width={2400}
                       height={800}

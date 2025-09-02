@@ -14,7 +14,7 @@ export default function Footer() {
           >
             <Image
               src="/images/linkedin.png"
-              alt="logo-linkedin"
+              alt="icon-linkedin"
               priority
               width={2400}
               height={800}
@@ -23,10 +23,11 @@ export default function Footer() {
           </Link>
           <Link
             href="https://github.com/dim-27"
+            target="_blank"
           >
             <Image
               src="/images/github.png"
-              alt="logo-github"
+              alt="icon-github"
               priority
               width={2400}
               height={800}
@@ -40,7 +41,7 @@ export default function Footer() {
           >
             <Image
               src="/images/mail.png"
-              alt="logo-github"
+              alt="icon-mail"
               priority
               width={2400}
               height={800}
